@@ -10,8 +10,6 @@ object Productos{
   import org.apache.spark.SparkContext
 
   def main(args: Array[String]) {
-    val conf: SparkConf = new SparkConf().setAppName("productos").setMaster("local[*]").set("spark.hadoop.validateOutputSpecs", "false")
-    val sc: SparkContext = new SparkContext(conf)
 
     lazy val spark:SparkSession = SparkSession
       .builder()
